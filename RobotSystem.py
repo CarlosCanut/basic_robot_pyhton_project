@@ -88,3 +88,13 @@ class RobotTransportador(Robot):
         print("transporto una carga a x: {}, y: {}".format(x,y))
 # ----------------- /class
 
+
+# Robot behaviour for flying
+class RobotVolador(RobotTransportador,RobotVigilador):
+
+    def aterrizar(self):
+        print("Aterrizo")
+
+    def despegar(self):
+        print("Despegar")
+# ---------------- /class
