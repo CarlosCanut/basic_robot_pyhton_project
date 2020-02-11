@@ -49,6 +49,17 @@ class Robot:
         self.estado_robot.APAGADO
 # ------------- /Robot class
 
+# Robot behaviour for watching over class
+class RobotVigilador(Robot):
+
+    modo_vision.NOCTURNA
+
+    def cambiarModoVision(self):
+        if modo_vision.NOCTURNA:
+            modo_vision.DIURNA
+        else:
+            modo_vision.NOCTURNA
+# ----------------- /class
 
 
 
