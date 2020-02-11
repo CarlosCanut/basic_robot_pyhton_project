@@ -89,7 +89,7 @@ class RobotTransportador(Robot):
 # ----------------- /class
 
 
-# Robot behaviour for flying
+# Robot behaviour for flying class
 class RobotVolador(RobotTransportador,RobotVigilador):
 
     def aterrizar(self):
@@ -98,3 +98,17 @@ class RobotVolador(RobotTransportador,RobotVigilador):
     def despegar(self):
         print("Despegar")
 # ---------------- /class
+
+
+
+# Robot behaviour for driving class
+class RobotCirculador(RobotTransportador,RobotVigilador):
+
+    def arrancar(self):
+        print("Arrancar")
+        estado_robot.ENCENDIDO
+
+    def apagar(self):
+        print("Apagar")
+        estado_robot.APAGADO
+# --------------- /class
