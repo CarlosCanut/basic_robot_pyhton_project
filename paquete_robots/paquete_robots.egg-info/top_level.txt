@@ -1,0 +1,7 @@
+Carga
+Enumeraciones
+Robot
+RobotCirculador
+RobotTransportador
+RobotVigilador
+RobotVolador
